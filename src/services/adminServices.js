@@ -1,6 +1,6 @@
 import { gql, request } from 'graphql-request';
 
-const API_URL = 'http://localhost:8000/graphql';
+const API_URL = 'http://127.0.0.1:5000/graphql';
 
 // GraphQL Queries & Mutations
 const GET_USERS_QUERY = gql`
