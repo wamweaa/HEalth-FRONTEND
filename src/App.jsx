@@ -52,7 +52,7 @@ import DoctorDashboard from './components/DoctorDashboard';
 import PharmacistDashboard from './components/PharamacistDashboard';
 import PatientDashboard from './components/PatientDashboard';
 import Login from './components/Login';
-// import Unauthorized from './components/Unauthorized';
+import Unauthorized from './components/Unauthorized';
 
 function App() {
   return (
@@ -60,7 +60,7 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Login />} />
-          {/* <Route path="/unauthorized" element={<Unauthorized />} /> */}
+          <Route path="/unauthorized" element={<Unauthorized />} />
           
           <Route
             path="/admin"
