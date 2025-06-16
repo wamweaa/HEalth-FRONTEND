@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext'; // Assuming you have an auth context
 import { Button, Container, Typography, Box, Alert } from '@mui/material'; // Using Material-UI for styling
-import LockIcon from '@mui/icons-material/Lock';
+// import LockIcon from '@mui/icons-material/Lock';
 import { logUnauthorizedAccess } from '../services/auditLogService'; // Audit logging service
 
 const Unauthorized = () => {
@@ -41,7 +41,7 @@ const Unauthorized = () => {
   return (
     <Container maxWidth="md" sx={{ mt: 8, textAlign: 'center' }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
-        <LockIcon sx={{ fontSize: 80, color: 'error.main' }} />
+        {/* <LockIcon sx={{ fontSize: 80, color: 'error.main' }} /> */}
       </Box>
       
       <Typography variant="h4" gutterBottom>
